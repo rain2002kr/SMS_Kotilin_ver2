@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btPerRecv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="리시브허가" />
+
+        <Button
+            android:id="@+id/btPerSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전송허가" />
+
+        <Button
+            android:id="@+id/btPerRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="읽기허가" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btRegistScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="등록리스트" />
+
+        <Button
+            android:id="@+id/btStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서비스시작" />
+
+        <Button
+            android:id="@+id/btStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서비스종료" />
+
+        <Button
+            android:id="@+id/btSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="문자전송" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="010-4697-3907" />
+    <EditText
+        android:id="@+id/editsms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="test_sms" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        />
+
+
+
+
+</LinearLayout>
