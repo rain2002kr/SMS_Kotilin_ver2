@@ -13,7 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RegistItemActivity"></activity>
-        <activity android:name=".RegistActivity" />
 
         <receiver
             android:name=".SmSReceiver"

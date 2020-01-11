@@ -28,22 +28,17 @@ class SmSReceiver : BroadcastReceiver() {
             Log.d(this.javaClass.name, "sender: $sender")
             Log.d(this.javaClass.name, "contents: $contents")
             Log.d(this.javaClass.name, "received date: $receivedDate")
-            Toast.makeText(
-                context,
-                "broad send Sms $sender : $contents",
-                Toast.LENGTH_LONG
-            ).show()
-            sendToActivity(context, sender + "from broad")
+            Toast.makeText(context,"broad send Sms $sender : $contents",Toast.LENGTH_LONG).show()
+            sendToActivity(context,sender.toString(),contents.toString(),receivedDate.toString())
         }
     }
 
-    private fun sendToActivity(
-        context: Context,
-        str: String
-    ) {
+    private fun sendToActivity(context: Context,sender: String,contents: String,receivedDate: String) {
         val intent = Intent(context, MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP)
-        intent.putExtra("string", str)
+        intent.putExtra("sender", sender)
+        intent.putExtra("contents", contents)
+        intent.putExtra("receivedDate", receivedDate)
         context.startActivity(intent)
     }
 
